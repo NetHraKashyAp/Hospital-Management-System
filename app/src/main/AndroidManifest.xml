@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hospitalmanagementsystem">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HospitalManagementSystem">
+        <activity android:name=".MedicineReminder"/>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".OtpVerification" />
+        <activity android:name=".Ambulance_Service" />
+        <activity android:name=".MainActivity4"/>
+        <activity android:name=".BottomNavigation"/>
+        <activity android:name=".Third_Page" />
+        <activity android:name=".SecondPage" />
+        <activity android:name=".appointments" />
+        <activity android:name=".viewappointments" />
+        <activity android:name=".ap" />
+        <activity android:name=".SignUp" />
+        <activity android:name=".DrLoginPage" />
+        <activity android:name=".LoginPage" />
+        <activity android:name=".welcome" />
+        <activity android:name=".SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

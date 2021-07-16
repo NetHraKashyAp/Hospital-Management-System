@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ambulance_Service"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="@drawable/blue_medical_background">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="91dp">
+
+        <ImageView
+            android:layout_width="77dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/amb108" />
+
+        <TextView
+            android:layout_width="292dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:text="Ambulance Service"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Enter Phone Number"
+            app:startIconDrawable="@drawable/ic_baseline_phone_24"
+            app:hintTextColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            app:startIconTint="@color/black"
+            android:id="@+id/number">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="phone"
+                android:textColor="@color/black"
+                android:maxLength="10"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Enter Address"
+            app:startIconDrawable="@drawable/ic_baseline_location_on_24"
+            app:hintTextColor="@color/black"
+            app:boxStrokeWidthFocused="2dp"
+            app:startIconTint="@color/black"
+            android:id="@+id/address">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="text"
+                android:layout_marginTop="15dp"
+                android:textColor="@color/black"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/emergency_button"
+        android:layout_gravity="center"
+        android:id="@+id/emergency"/>
+
+    <TextView
+        android:layout_width="203dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="40dp"
+        android:text="Press the above button to call"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+
+</LinearLayout>

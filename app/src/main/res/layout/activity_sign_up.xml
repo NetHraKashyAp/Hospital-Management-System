@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="30dp"
+    android:background="#00BCD4"
+    tools:context=".SignUp">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="32dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="Create Account"
+        android:textColor="@color/cardview_light_background">
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Please fill the input below here"
+        android:textColor="@color/cardview_light_background"
+        android:paddingBottom="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="22dp"
+        android:textColor="@color/cardview_light_background"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    </TextView>
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Full Name"
+        android:textColorHint="@color/cardview_light_background"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:drawableLeft="@drawable/ic_baseline_perm_identity_24">
+    </EditText>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textSize="22dp"
+        android:textColor="@color/cardview_light_background"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    </TextView>
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Username"
+        android:textColorHint="@color/cardview_light_background"
+        android:inputType="textPersonName"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:drawableLeft="@drawable/ic_baseline_perm_identity_24">
+    </EditText>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email "
+        android:textSize="22dp"
+        android:textColor="@color/cardview_light_background"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    </TextView>
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_mail_24"
+        android:hint=" email"
+        android:textColorHint="@color/cardview_light_background"
+        android:inputType="textWebEmailAddress"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact no. "
+        android:textSize="22dp"
+        android:textColor="@color/cardview_light_background"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    </TextView>
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:hint=" +91 "
+        android:textColorHint="@color/cardview_light_background"
+        android:inputType="phone"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    </EditText>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Password "
+        android:textSize="22dp"
+        android:textColor="@color/cardview_light_background"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    </TextView>
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_outline_lock_24"
+        android:hint="Password"
+        android:textColorHint="@color/cardview_light_background"
+        android:inputType="textPassword"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    </EditText>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="22dp"
+        android:text="Confirm password"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    </TextView>
+    <EditText
+        android:id="@+id/Pass2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_outline_lock_24"
+        android:hint="Confirm Password"
+        android:textColorHint="@color/cardview_light_background"
+        android:inputType="textPassword"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+    </EditText>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:id="@+id/radioGroup">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:textSize="22dp"
+            android:textColor="@color/cardview_light_background"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="19dp"
+            android:textColor="@color/cardview_light_background"
+            android:text="male"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/male"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="female"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="19dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/female"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="other"
+            android:textColor="@color/cardview_light_background"
+            android:textSize="19dp"
+            android:id="@+id/other"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Get otp"
+        android:textSize="15dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal"
+        android:contextClickable="true"
+        android:background="@drawable/button"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Sign In"
+        android:textColor="@color/cardview_light_background"
+        android:gravity="center_horizontal"
+        android:id="@+id/login"/>
+
+
+</LinearLayout>

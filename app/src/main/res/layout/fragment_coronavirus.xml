@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoronavirusFragment">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/custom_rectangle"/>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.025"
+        android:text="Covid-19"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.025"
+        android:text="Are you feeling sick ?"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp" />
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:gravity="center_horizontal"
+        android:text="If you feel sick with any of covid-19 symptoms\nplease CALL or SMS us immediately for help.\n Our services are available 24*7."
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:lineSpacingExtra="8dp"
+        android:layout_marginLeft="16dp" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="141dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="250dp"
+        android:background="@drawable/call_button"
+        android:drawableLeft="@drawable/ic_baseline_phone_24"
+        android:layout_marginLeft="20dp"
+        android:text="Call Now"
+        android:drawableTint="@color/white"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="146dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="220dp"
+        android:background="@drawable/sms_button"
+        android:drawableLeft="@drawable/sms_button"
+        android:drawableTint="@color/white"
+        android:text="Send SMS"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="370dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.025"
+        android:text="Prevention"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="415dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/distance"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="415dp"
+        android:layout_marginLeft="150dp"
+        android:src="@drawable/handwash"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="415dp"
+        android:layout_marginLeft="280dp"
+        android:src="@drawable/mask"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="526dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="0.025"
+        android:text="Sypmtoms"
+        android:textColor="@color/black"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="16dp" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="571dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/cough"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="571dp"
+        android:layout_marginLeft="150dp"
+        android:src="@drawable/fever"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="571dp"
+        android:layout_marginLeft="280dp"
+        android:src="@drawable/breath"/>
+
+</FrameLayout>
